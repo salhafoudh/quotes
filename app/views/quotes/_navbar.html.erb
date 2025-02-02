@@ -1,0 +1,15 @@
+
+<nav>
+    <div class="flex py-4 items-center">
+      
+       <div class="flex mx-auto gap-4 items-center">
+            <%= link_to "Home", root_path, class:"block text-blue-600 hover:text-blue-800" %>
+            <%= link_to "New quote", "/quotes/new", class:"block text-blue-600 hover:text-blue-800" %>
+            <%= link_to "All quotes", "/quotes", class:"block text-blue-600 hover:text-blue-800" %>
+       </div> 
+       <div class="flex mx-auto gap-3 items-center">   
+            <%= link_to "Profile", edit_admin_registration_path, class:"block text-blue-600 hover:text-blue-800" %>     
+            <%= button_to "Log out", destroy_admin_session_path, method: :delete, class:"block py-2 px-3 text-white bg-blue-700 hover:bg-blue-800 border rounded-lg " %>
+       </div>
+    </div>
+</nav>
